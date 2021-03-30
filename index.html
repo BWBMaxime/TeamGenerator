@@ -10,16 +10,36 @@
     <header>
         <div>
             <img src="" alt="">
-            <h1>TeamGen</h1>
+            <h1>TEAMGEN</h1>
         </div>
     </header>
     <div>
         <h2>TeamGen c'est quoi ?</h2>
-        <p>Je suis un </p>
+        <p>Je suis un générateur de groupes présentiel/distantiel aléatoire.</p>
+        <p>Mode d'emploi : </p>
+        <ol>
+            <li>Entrez le nom de chaque coéquipier</li>
+            <li>Validez le nom de chaque coéquipier</li>
+            <li>Une fois votre tableau d'équipe rempli, lancez le générateur via TeamGen</li>
+            <li>Voici les deux tableaux avec vos équipes générés</li>
+        </ol>
+        <p>NOUVEAU!!</p>
+        <a href="loic.html"><button>Version flemme disponible !</button></a>
     </div>
     <div>
         <h3>Entre les noms de tes coéquipiers afin que je puisse élaborer vos groupes.</h3>
+        <!--Espace pour entrer les prénoms des gens qui formeront les groupes-->
         <input type="text">
+        <!--Boutton pour valider les prénoms des gens qui formeront les groupes-->
+        <input type="submit" value="Valider">
+        <!--Boutton pour générer les groupes-->
+        <input type="submit" value="TeamGen">
+        <!--Table qui héberge les prénoms des gens qui formeront les groupes-->
+        <tr id="participants"></tr>
+        <!--Table qui héberge les prénoms des gens du groupe 1-->
+        <tr id="groupe1"></tr>
+        <!--Table qui héberge les prénoms des gens du groupe 2-->
+        <tr id="groupe2"></tr>
     </div>
 </body>
 <script src="script.js"></script>
