@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>TeamGen</title>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=>, initial-scale=1.0">
+        <title>TeamGen</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="" alt="">
+                <h1>TEAMGEN</h1>
+            </div>
+        </header>
         <div>
-            <img src="" alt="">
-            <h1>TEAMGEN</h1>
+            <h2>TeamGen c'est quoi ?</h2>
+            <p>Je suis un générateur de groupes présentiel/distantiel aléatoire.</p>
+            <p>Mode d'emploi : </p>
+            <ol>
+                <li>Entrez le nom de chaque coéquipier</li>
+                <li>Validez le nom de chaque coéquipier</li>
+                <li>Une fois votre tableau d'équipe rempli, lancez le générateur via TeamGen</li>
+                <li>Voici les deux tableaux avec vos équipes générés</li>
+            </ol>
+            <p>NOUVEAU!!</p>
+            <a href="loic.html"><button>Version flemme disponible !</button></a>
         </div>
-    </header>
-    <div>
-        <h2>TeamGen c'est quoi ?</h2>
-        <p>Je suis un générateur de groupes présentiel/distantiel aléatoire.</p>
-        <p>Mode d'emploi : </p>
-        <ol>
-            <li>Entrez le nom de chaque coéquipier</li>
-            <li>Validez le nom de chaque coéquipier</li>
-            <li>Une fois votre tableau d'équipe rempli, lancez le générateur via TeamGen</li>
-            <li>Voici les deux tableaux avec vos équipes générés</li>
-        </ol>
-        <p>NOUVEAU!!</p>
-        <a href="loic.html"><button>Version flemme disponible !</button></a>
-    </div>
-    <div>
-        <h3>Entre les noms de tes coéquipiers afin que je puisse élaborer vos groupes.</h3>
-        <!--Espace pour entrer les prénoms des gens qui formeront les groupes-->
-        <input type="text">
-        <!--Boutton pour valider les prénoms des gens qui formeront les groupes-->
-        <input type="submit" value="Valider">
-        <!--Boutton pour générer les groupes-->
-        <input type="submit" value="TeamGen">
-        <!--Table qui héberge les prénoms des gens qui formeront les groupes-->
-        <tr id="participants"></tr>
-        <!--Table qui héberge les prénoms des gens du groupe 1-->
-        <tr id="groupe1"></tr>
-        <!--Table qui héberge les prénoms des gens du groupe 2-->
-        <tr id="groupe2"></tr>
-    </div>
-</body>
-<script src="script.js"></script>
+        <div>
+            <h3>Entre les noms de tes coéquipiers afin que je puisse élaborer vos groupes.</h3>
+            <form action="">
+                <!--Espace pour entrer les prénoms des gens qui formeront les groupes-->
+                <input type="text" id="entername" accesskey="enter" value="Entrez le nom ici" keypress="javascript:this.value=''" >
+                <!--Boutton pour valider les prénoms des gens qui formeront les groupes-->
+                <input type="submit" value="Valider" id="validername" >
+        
+                <!--Boutton pour générer les groupes-->
+                <input type="submit" value="TeamGen" id="teamGen">
+            </form>
+            <!--Table qui héberge les prénoms des gens qui formeront les groupes-->
+            <table>
+                <th>Votre équipe</th>
+                <tr id="participants"></tr>
+            </table>
+            <!--Table qui héberge les prénoms des gens du groupe 1-->
+            <table>
+                <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
+                <tr id="groupe1"></tr>
+            </table>
+            <!--Table qui héberge les prénoms des gens du groupe 2-->
+            <table>
+                <th>Groupe 2 : Mardi - Jeudi</th>
+                <tr id="groupe2"></tr>
+            </table>
+        </div>
+    </body>
+    <script src="script.js"></script>
 </html>
