@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,17 +26,19 @@
     </div>
     <div>
         <h3>N'entre pas tes noms d'élèves</h3>
-        <button>Activer le mode flemme !</button> <!-- Activer mode flemme ( déclenche l'évènement génération des deux groupes) -->
+        <input type="button" value="Activer le mode flemme !" id="teamGen"><!-- Activer mode flemme ( déclenche l'évènement génération des deux groupes) -->
     </div>
     <div>
-        <!--Tableaux qui stock les stagiaires du groupe 1-->
-        <tr>
-            
-        </tr>
-        <!--Tableaux qui stock les stagiaires du groupe 2-->
-        <tr>
-
-        </tr>
+        <!--Table qui héberge les prénoms des gens du groupe 1-->
+        <table>
+            <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
+            <tr id="groupe1"></tr>
+        </table>
+        <!--Table qui héberge les prénoms des gens du groupe 2-->
+        <table>
+            <th>Groupe 2 : Mardi - Jeudi</th>
+            <tr id="groupe2"></tr>
+        </table>
     </div>
 </body>
 <script src="loic.js"></script>

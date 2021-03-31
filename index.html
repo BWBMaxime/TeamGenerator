@@ -28,18 +28,27 @@
     </div>
     <div>
         <h3>Entre les noms de tes coéquipiers afin que je puisse élaborer vos groupes.</h3>
-        <!--Espace pour entrer les prénoms des gens qui formeront les groupes-->
-        <input type="text">
+        <!--Espace pour entrer les prénoms des gens qui formeront les groupes et lorsqu'on se met dessus on efface le nom afin d'éviter l'effacer à chaque fois-->
+        <input type="text" id="entername" value="Entrez le prénom" onFocus="javascript:this.value=''">
         <!--Boutton pour valider les prénoms des gens qui formeront les groupes-->
-        <input type="submit" value="Valider">
+        <input type="submit" value="Valider" id="validername">
         <!--Boutton pour générer les groupes-->
-        <input type="submit" value="TeamGen">
+        <input type="submit" value="teamGen" id="teamGen">
         <!--Table qui héberge les prénoms des gens qui formeront les groupes-->
-        <tr id="participants"></tr>
+        <table>
+            <th>Liste des participants</th>
+            <tr id="participants"></tr>
+        </table>
         <!--Table qui héberge les prénoms des gens du groupe 1-->
-        <tr id="groupe1"></tr>
+        <table>
+            <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
+            <tr id="groupe1"></tr>
+        </table>
         <!--Table qui héberge les prénoms des gens du groupe 2-->
-        <tr id="groupe2"></tr>
+        <table>
+            <th>Groupe 2 : Mardi - Jeudi</th>
+            <tr id="groupe2"></tr>
+        </table>
     </div>
 </body>
 <script src="script.js"></script>
