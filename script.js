@@ -40,4 +40,3 @@ var newGroupe2 = document.createElement("td");
 document.getElementById("groupe2").appendChild(newGroupe2).innerHTML = namePush;
 
 });
-
