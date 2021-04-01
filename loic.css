@@ -1,0 +1,123 @@
+header{
+    background-color: rgb(248, 32, 151);
+    height: 250px;
+    width: 100%;
+    vertical-align: center;
+}
+
+.couronne{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media only screen and (min-width: 500px){
+  .titre{
+    text-align: center;
+    color : white;
+    font-size: 80px;
+    font-family: 'Leckerli One', cursive;
+  }
+}
+@media only screen and (max-width: 500px){
+    .titre {
+    text-align: center;
+    color : white;
+    font-size: 50px;
+    font-family: 'Leckerli One', cursive;
+    }
+  }
+
+
+@media only screen and (min-width: 500px){
+  .soustitre{
+    text-align: center;
+    color : rgb(247, 162, 235);
+    font-size: 40px;  
+    font-style: italic;
+    font-family: 'Leckerli One', cursive;
+  }
+}
+@media only screen and (max-width: 500px){
+    .soustitre {
+    text-align: center;
+    color : rgb(247, 162, 235);
+    font-size: 30px;  
+    font-style: italic;
+    font-family: 'Leckerli One', cursive;
+    }
+  }
+
+
+.presentation{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    font-family: 'Leckerli One', cursive;
+  
+}
+
+.secpres{
+    border-radius: 25% 10%;
+    background-color: rgb(235, 106, 202);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.titrepres{
+    font-size: 35px;
+    margin-top: 4%;
+}
+
+.pres{
+    font-size: 17px;
+}
+
+@media only screen and (min-width: 500px){
+  .princess{
+    width: 40% ;
+    height: 70% ;
+  }
+}
+@media only screen and (max-width: 500px){
+    .princess {
+    width: 150px ;
+    height: 170px ;
+    }
+  }
+
+
+.secme{
+    background-color: rgb(235, 198, 36);
+    border-radius: 50% 20% / 10% 40%;
+    border-width: 2em;
+    margin-right: 2%;
+}
+
+.titreme{
+    font-size: 35px;
+    margin-top: 10%;
+}
+
+.me{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.but{
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Leckerli One', cursive;
+}
+
+.info{
+    font-size: ;
+}
+
+
+.row{
+    margin-top: 1%;
+}
+

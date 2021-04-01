@@ -23,3 +23,5 @@ var newGroupe2 = document.createElement("td");
 document.getElementById("groupe2").appendChild(newGroupe2).innerHTML = huitAleatoires;
 
 });
+
+//faire fonction qui retourne tableau vide afin de ne pas répéter les groupes un derrière l'autre

@@ -7,41 +7,54 @@
     <!-- CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="loic.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
     <title>TeamGen</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="" alt="">
-            <h1>LoicGen</h1>
+            <img class="couronne" src="https://i.pinimg.com/originals/15/c4/3e/15c43e989d8c0ea91fca5d7463dbe45f.png" alt="couronne loic" width="5%" height="5%">
+            <h1 class="titre">LoicGen</h1>
+            <p class="soustitre">Le générateur de groupes pour les flemmards</p>
         </div>
     </header>
-    <div>
-        <h2>LoicGen c'est quoi ?</h2>
-        <p>Bonjour Loîc ! Bienvenue dans le LoicGen, assis toi et ne fais rien.</p>
-        <p>Mode Emploie :</p>
-        <ol>
-            <li>Assis toi sur ta chaise en pliant les genoux</li>
-            <li>Ouvre ou ferme ta braguette à ton aise</li>
-            <li>Profite du gain de temps</li>
-            <li>ET SURTOUT ne fais rien</li>
-        </ol>
+    <div class="presentation">
+        <section class="secpres">
+            <h2 class="titrepres">LoicGen c'est quoi ?</h2>
+            <p class="pres">Bonjour Loïc ! Bienvenue dans le LoicGen, assieds-toi et ne fais rien LIKE A PRINCESS</p>
+                        <img class="princess" src="https://lh3.googleusercontent.com/proxy/suHM9tyhFyOCME_E3lUuXVqdSvwQP_1dvETn_4-ncL_5yHGamABzx2SXq11jiWEMmvrFFVSp5HotCSw7ey_oAGzMnnnN-U-xNIPoUfFC2_rDKG6BfOGl" alt="princesse loic" >
+
+        </section>
+        <section class="secme">
+            <p class="titreme">Mode d'emploi :</p>
+            <ul class="me">
+                <li>1. Assieds-toi sur ta chaise en pliant les genoux</li>
+                <li>2. Ouvre ou ferme ta braguette à ton aise</li>
+                <li>3. Profites du gain de temps</li>
+                <li>4. ET SURTOUT ne fais rien</li>
+            </ul>
+        </section>
     </div>
-    <div>
-        <h3>N'entre pas tes noms d'élèves</h3>
-        <input type="button" value="Activer le mode flemme !" id="teamGen"><!-- Activer mode flemme ( déclenche l'évènement génération des deux groupes) -->
+    <div class="but">
+        <h3 class="info">N'entre pas tes noms d'élèves</h3>
+        <input type="button" value="Activer le mode flemme !" id="teamGen" class="btn btn-warning btn-lg"><!-- Activer mode flemme ( déclenche l'évènement génération des deux groupes) -->
     </div>
-    <div>
-        <!--Table qui héberge les prénoms des gens du groupe 1-->
-        <table>
-            <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
-            <tr id="groupe1"></tr>
-        </table>
-        <!--Table qui héberge les prénoms des gens du groupe 2-->
-        <table>
-            <th>Groupe 2 : Mardi - Jeudi</th>
-            <tr id="groupe2"></tr>
-        </table>
+    <div class=row>
+        <div class="col-sm">
+            <!--Table qui héberge les prénoms des gens du groupe 1-->
+            <table class="table table-dark text-center col-md-12">
+                <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
+                <tr id="groupe1"></tr>
+            </table>
+        </div>
+            <!--Table qui héberge les prénoms des gens du groupe 2-->
+        <div class="col-sm">
+            <table class="table table-dark text-center col-md-12">
+                <th>Groupe 2 : Mardi - Jeudi</th>
+                <tr id="groupe2"></tr>
+            </table>
+        </div>
     </div>
 </body>
 <script src="loic.js"></script>
