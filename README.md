@@ -6,7 +6,7 @@ L'objectif de ce TP est de créer un générateur de groupe présentiel/distanci
 
 - Générateur de 2 groupes aléatoires pour notre promotion. Outil destiné à Loic
 
-Organisation
+**Organisation**
 
 - Création d'un conteneur HTTPD où pouvoir travailler
 
@@ -19,7 +19,7 @@ Organisation
 - A partir de cette branche HTML, création de notre branche JS et CSS, où l'on travaillera ces parties
 
 
-Fonctionnement
+**Fonctionnement**
 
 - Réflexion commune pour la partie HTML, CSS et JS et réparition des tâches
 
@@ -32,4 +32,3 @@ Fonctionnement
 - Lorsque le projet sera fini, réaliser un push final de tous les élements vers la branche master locale et distante
 
 - Lors des doutes ou problématiques, la priorité lors de la demande d'aide sera : recherche dans la documentation -> binôme -> camarades -> Loic
-
