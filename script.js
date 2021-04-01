@@ -33,8 +33,10 @@ var nameRest = tableName.slice(0);
 
 //creation de mon deuxieme tableau ou je pousse les noms 
 var namePush =[];
-
+/* Pousser un élément du tableau aléatoirement choisis tant que le tableau est inferieur a 7*/
 while (namePush.length<nameRest.length) namePush.push(nameRest.splice(Math.floor(Math.random()*nameRest.length),1)[0]);
+
+//afficher nos deux tableaux pour l utilisateur
 var newGroupe1 = document.createElement("td");
 document.getElementById("groupe1").appendChild(newGroupe1).innerHTML = nameRest;
 var newGroupe2 = document.createElement("td");
