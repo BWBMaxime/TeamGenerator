@@ -17,10 +17,11 @@ huitAleatoires=["Tamara","Vincent"];
 /* Pousser un élément du tableau aléatoirement choisis tant que le tableau est inferieur a 7*/
 while (huitAleatoires.length<7) huitAleatoires.push(stagiairesRestants.splice(Math.floor(Math.random()*stagiairesRestants.length),1)[0]);
 
-//afficher nos deux tableaux pour l utilisateur
 var newGroupe1 = document.createElement("td");
 document.getElementById("groupe1").appendChild(newGroupe1).innerHTML = stagiairesRestants;
 var newGroupe2 = document.createElement("td");
 document.getElementById("groupe2").appendChild(newGroupe2).innerHTML = huitAleatoires;
 
 });
+
+
