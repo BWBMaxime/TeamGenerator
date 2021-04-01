@@ -2,7 +2,7 @@
     background: #eaafc8;
     background: -webkit-linear-gradient(to right, #ff0800, #ffffff);
     background: linear-gradient(to right, #000000, #5f5f5f);
-    height: 70%;
+    
 
   }
 
@@ -26,30 +26,86 @@ h1:after {
     margin: 0 0 0 20px;
 }
 
-
-
+.myImgTeamGen {
+    align-items: center;
+     width: 80%;
+     height: 80%;
+     margin-left: 10%;
+}
+@media only screen and (min-width: 667px){
   .myTextTitle {
     color:white;
     font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    
+    
+    
 
+  }
+}
+@media only screen and (max-width: 667px){
+    .myTextTitle {
+      color:white;
+      font-family: 'Brush Script MT', cursive;
+      text-align: center;
+      margin-top: 8%;
+      
+  
+    }
   }
   .infosTeamGen {
       margin-top: 3%;
   }
-
+  @media only screen and (max-width: 667px) {
   .myLogoAgenda {
       
      border-radius: 10%;
-     width: 5%;
-     height: 5%;
+     width: 35px;
+     height: 35px;
+     margin-top: -7%;
+     margin-left: 5%;
     
   }
+}
+@media only screen and (min-width: 667px) {
+    .myLogoAgenda {
+        
+       border-radius: 10%;
+       width: 90px;
+       height: 90px;
+  
+      
+    }
+  }
+    
+  
+  .teamGenQuestion {
+    border-style: 1px solid black;
+    font-family: Verdana;
+  }
+  .questionPlace {
+      
+      margin-bottom: 8%;
+      border-style: 1px solid black;
+  }
+
+  .listModeEmploie {
+      margin-top: 15%;
+      margin-left: -8%;
+  }
+ tr {
+     text-align: center;
+     justify-content: center;
+    
+ }
 
   .newV  {
     animation-duration: 5s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: none;
+    margin-top: 3%;
+    margin-bottom: 5%;
  }
  
  @keyframes clignoter {
@@ -58,4 +114,6 @@ h1:after {
    100% { opacity:1; }
  }
 
- 
+ .myBtn {
+     margin-bottom:5%;
+ }

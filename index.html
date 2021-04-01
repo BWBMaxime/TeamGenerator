@@ -18,10 +18,10 @@
     <body>
        
             <div class="row myTitle">
-                <div class="">
-                  <div class="mx-auto text-center">
+                <div class="col-sm">
+                  <div class="col-sm text-center">
                    
-                    <h1 class="display-4 myTextTitle">T &nbsp; E &nbsp; A &nbsp; M &nbsp; &nbsp;<img src="https://www.corse.catholique.fr/wp-content/uploads/sites/17/2020/10/logo-agenda.png" class="img-fluid myLogoAgenda" alt="Responsive image"> &nbsp; &nbsp; G &nbsp; E &nbsp; N &nbsp;</h1>
+                    <h1 class= "myTextTitle">T &nbsp;E &nbsp;A &nbsp;M &nbsp;<img src="https://www.corse.catholique.fr/wp-content/uploads/sites/17/2020/10/logo-agenda.png" class=" myLogoAgenda" alt="">&nbsp; G &nbsp; E &nbsp; N &nbsp;</h1>
                   </div>
                 </div>
             </div>    
@@ -29,18 +29,18 @@
         <div class = "container infosTeamGen">
             <div class="row">
                 <div class="col-sm">
-                    <div>
-                        <h2 class="text-center">TeamGen c'est quoi ?</h2>
+                    <div class="questionPlace">
+                        <h2 class="text-center teamGenQuestion">&#128270;TeamGen c'est quoi ?&#128269;</h2>
                     </div>
                     <div>
-                        <p> C'est un générateur de groupes présentiel/distantiel aléatoire.</p>
+                        <img src="/myImgTeamGen/depositphotos_29316347-stock-photo-think-and-speech-bubbles (2).jpg" class="myImgTeamGen"alt="" srcset="">
                     </div>
                     
                 </div> 
-                <div class="col-sm list-group">
+                <div class="col-sm list-group ">
                     
-                <ol>
-                    <li class="text-center list-group-item list-group-item-warning"><h2>Mode d'emploie</h2></li>
+                <ol class="listModeEmploie">
+                    <li class="text-center list-group-item list-group-item-warning"><h2>Mode d'emploi</h2></li>
                    
                     <li class="text-center list-group-item list-group-item-warning">Entrez le nom de chaque coéquipier</li>
                     <li class="text-center list-group-item list-group-item-warning">Validez le nom de chaque coéquipier</li>
@@ -53,36 +53,46 @@
                 <a href="loic.html" type="btn" class="btn btn-primary btn-lg btn-block text-center"> NOUVEAU ! Version flemme disponible ICI !</a>
             </div>
         </div>
-        <div class="container">
+        <div class="container text-center ">
             <h3>Entre les noms de tes coéquipiers afin que je puisse élaborer vos groupes.</h3>
             <form action="">
-                <!--Espace pour entrer les prénoms des gens qui formeront les groupes-->
-                <input type="text" id="entername" accesskey="enter" value="Entrez le nom ici" keypress="javascript:this.value=''" >
-                <!--Boutton pour valider les prénoms des gens qui formeront les groupes-->
-                <input type="submit" value="Valider" id="validername" >
-        
-                <!--Boutton pour générer les groupes-->
-                <input type="submit" value="TeamGen" id="teamGen">
+                <div class="form-outline ">
+                    <input type="text" id="entername" class="form-control text-center" accesskey="enter" keypress="javascript:this.value=''" value="Entrez les noms ici" />
+                    <label class="form-label" for="entername"></label>
+                  </div>
+                  
+                <div class="myBtn">
+                    <!--Boutton pour valider les prénoms des gens qui formeront les groupes-->
+                    <input type="submit" value="Valider" id="validername" class="btn btn-primary btn-lg" >
+           
+                    <!--Boutton pour générer les groupes-->
+                    <input type="submit" value="TeamGen" id="teamGen" class="btn btn-primary btn-lg">
+                </div>
             </form>
             <!--Table qui héberge les prénoms des gens qui formeront les groupes-->
             <table class="table table-dark text-center col-md-12">
-                <th class="">Votre équipe</th>
-                <tr id="participants"></tr>
+                <th id="monEquipe" class="">Votre équipe</th>
+                <tr class="" ></tr>
             </table>
             <div class="row">
                 <div class="col-sm">
                     <!--Table qui héberge les prénoms des gens du groupe 1-->
-                    <table class="table table-dark text-center">
+                   
+                     <!--Table qui héberge les prénoms des gens du groupe 1-->
+                    <table class="table table-dark text-center col-md-12">
                         <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
                         <tr id="groupe1"></tr>
                     </table>
                 </div>
                 <!--Table qui héberge les prénoms des gens du groupe 2-->
                 <div class="col-sm">
-                    <table class="table table-dark text-center">
+       
+                    <!--Table qui héberge les prénoms des gens du groupe 2-->
+                    <table class="table table-dark text-center col-md-12">
                         <th>Groupe 2 : Mardi - Jeudi</th>
                         <tr id="groupe2"></tr>
                     </table>
+                 
                 </div>
             </div>
         </div>

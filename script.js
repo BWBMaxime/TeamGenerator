@@ -15,8 +15,8 @@ var enterName = document.getElementById("entername").value;
 
 
 //On créé une cellule dans notre table et on le relie à notre ligne au travers de son id, ensuite on affiche les prénoms entrés dans ce nouveau élément 
-var newtr = document.createElement("td");
-document.getElementById("participants").appendChild(newtr).innerHTML = enterName;
+var newtr = document.createElement("p");
+document.getElementById("monEquipe").appendChild(newtr).innerHTML = enterName;
 
 //pousser la valeur dans le tableaux
 tableName.push(enterName);
@@ -37,8 +37,8 @@ var namePush =[];
 while (namePush.length<nameRest.length) namePush.push(nameRest.splice(Math.floor(Math.random()*nameRest.length),1)[0]);
 
 //afficher nos deux tableaux pour l utilisateur
+
 var newGroupe1 = document.createElement("td");
 document.getElementById("groupe1").appendChild(newGroupe1).innerHTML = nameRest;
 var newGroupe2 = document.createElement("td");
-document.getElementById("groupe2").appendChild(newGroupe2).innerHTML = namePush;
-})
+document.getElementById("groupe2").appendChild(newGroupe2).innerHTML = namePush;});
