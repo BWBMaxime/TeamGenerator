@@ -32,3 +32,24 @@ L'objectif de ce TP est de créer un générateur de groupe présentiel/distanci
 - Lorsque le projet sera fini, réaliser un push final de tous les élements vers la branche master locale et distante
 
 - Lors des doutes ou problématiques, la priorité lors de la demande d'aide sera : recherche dans la documentation -> binôme -> camarades -> Loic
+
+
+
+
+
+
+### RETOUR UTILISATEUR
+
+La page LoïcGen est plutôt... moche, et pas responsive (à l'image de Loïc)
+
+Sinon au niveau de la génération aléatoire la version automatique devrait être la seule présente puisqu'il s'agit de la version la plus pratique, beaucoup plus pratique que de rentrer les noms à la main (même si ça pourrait être intéressant dans un autre contexte)
+
+L'interface principale est plutôt bien niveau design, responsive, et elle documente clairement les étapes à suivre.
+
+Problème, l'affichage des images ne fonctionne pas (à part pour les logos de loupes et de calendrier), pour une raison inconnue.
+
+Aussi, les groupes générés ne remplacent pas les anciens résultats et se rajoutent aux anciens résultats, ce qui en plus casse votre design.
+
+Ça peut se régler en définissant le innerHTML de votre cible sur ' ' (une chaîne de caractères vide) pour effacer le contenu, avant de rajouter le nouveau résultat.
+
+Bref, bien foutu dans l'ensemble et pour le temps imparti.
