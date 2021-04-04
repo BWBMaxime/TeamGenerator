@@ -5,11 +5,24 @@ header{
     vertical-align: center;
 }
 
-.couronne{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+@media only screen and (min-width: 500px){
+  .couronne{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 5%;
+    height: 5%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .couronne{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 15%;
+    height: 15%;
+  }
 }
 
 @media only screen and (min-width: 500px){
@@ -28,6 +41,7 @@ header{
     font-family: 'Leckerli One', cursive;
     }
   }
+
 
 
 @media only screen and (min-width: 500px){
@@ -66,13 +80,28 @@ header{
     margin-right: 2%;
 }
 
-.titrepres{
+@media only screen and (min-width: 500px){
+  .titrepres{
     font-size: 35px;
     margin-top: 4%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .titrepres {
+    font-size: 25px;
+    margin-top: 4%;
+    }
 }
 
-.pres{
+@media only screen and (min-width: 500px){
+  .pres{
     font-size: 17px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .pres {
+    font-size: 10px;
+    }
 }
 
 @media only screen and (min-width: 500px){
@@ -96,14 +125,31 @@ header{
     margin-right: 2%;
 }
 
-.titreme{
+@media only screen and (min-width: 500px){
+  .titreme{
     font-size: 35px;
     margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .titreme {
+    font-size: 25px;
+    margin-top: 10%;
+    }
 }
 
-.me{
+@media only screen and (min-width: 500px){
+  .me{
     list-style-type: none;
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .me {
+    list-style-type: none;
+    font-size: 10px;
+    text-align: left;
+    }
 }
 
 .but{
@@ -113,7 +159,58 @@ header{
 }
 
 
+
+
 .row{
     margin-top: 1%;
 }
 
+
+@media only screen and (min-width: 500px){
+  th{
+  font-family: 'Leckerli One', cursive;
+  font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px){
+  th {
+  font-family: 'Leckerli One', cursive;
+  font-size: 15px;
+    }
+}
+
+
+
+
+.table-danger{
+  background-color: purple;
+}
+
+
+@media only screen and (min-width: 500px){
+  tr{
+  font-family: 'Leckerli One', cursive;
+  font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px){
+  tr {
+  font-family: 'Leckerli One', cursive;
+  font-size: 10px;
+    }
+}
+
+
+.pageprincipale{
+  font-family: 'Leckerli One', cursive;
+  text-align: center;
+  margin-top: 2%;
+  color:white;
+  
+}
+
+
+
+.btn-outline-light{
+  background-color:rgb(192, 59, 132);
+}

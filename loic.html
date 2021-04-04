@@ -15,7 +15,7 @@
 <body>
     <header>
         <div>
-            <img class="couronne" src="https://i.pinimg.com/originals/15/c4/3e/15c43e989d8c0ea91fca5d7463dbe45f.png" alt="couronne loic" width="5%" height="5%">
+            <img class="couronne" src="https://i.pinimg.com/originals/15/c4/3e/15c43e989d8c0ea91fca5d7463dbe45f.png" alt="couronne loic">
             <h1 class="titre">LoicGen</h1>
             <p class="soustitre">Le générateur de groupes pour les flemmards</p>
         </div>
@@ -39,24 +39,30 @@
     </div>
     <div class="but">
         <h3 class="info">N'entre pas tes noms d'élèves</h3>
+        <!--Boutton teamgen-->
         <input type="button" value="Activer le mode flemme !" id="teamGen" class="btn btn-warning btn-lg"><!-- Activer mode flemme ( déclenche l'évènement génération des deux groupes) -->
+        <!--Boutton reset table-->
+        <input type="button" value="Réinitialiser les tableaux" id="myResetTable" class="btn btn-danger btn-lg">
     </div>
     <div class=row>
         <div class="col-sm">
             <!--Table qui héberge les prénoms des gens du groupe 1-->
-            <table class="table table-danger text-center col-md-12">
+            <table class="table table-striped table-danger text-center col-md-12">
                 <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
                 <tr id="groupe1"></tr>
             </table>
         </div>
             <!--Table qui héberge les prénoms des gens du groupe 2-->
         <div class="col-sm">
-            <table class="table table-danger text-center col-md-12">
+            <table class="table table-striped table-danger text-center col-md-12">
                 <th>Groupe 2 : Mardi - Jeudi</th>
                 <tr id="groupe2"></tr>
             </table>
         </div>
     </div>
+    <form class="pageprincipale">
+        <button type="submit" formaction="index.html" class="btn btn-outline-light">Générateur de groupes pour les non flemmards</button>
+    </form>
 </body>
 <script src="loic.js"></script>
 </html>
