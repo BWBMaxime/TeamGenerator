@@ -28,6 +28,12 @@ var teamGen = document.getElementById("teamGen");
 
 teamGen.addEventListener("click", (e)=> {
     e.preventDefault();
+
+    document.getElementById("allGroup").innerHTML = "";
+document.getElementById("groupe1").innerHTML = "";
+document.getElementById("groupe2").innerHTML = "";
+
+
 //duplication de mon tableaux
 var nameRest = tableName.slice(0);
 
@@ -38,7 +44,25 @@ while (namePush.length<nameRest.length) namePush.push(nameRest.splice(Math.floor
 
 //afficher nos deux tableaux pour l utilisateur
 
-var newGroupe1 = document.createElement("td");
+var newGroupe1 = document.createElement("p");
 document.getElementById("groupe1").appendChild(newGroupe1).innerHTML = nameRest;
-var newGroupe2 = document.createElement("td");
+var newGroupe2 = document.createElement("p");
 document.getElementById("groupe2").appendChild(newGroupe2).innerHTML = namePush;});
+
+/* Fonction pour vider la table*/
+myResetTable.addEventListener("click", (e)=> {
+    e.preventDefault();
+
+document.getElementById("allGroup").innerHTML = "";
+document.getElementById("groupe1").innerHTML = "";
+document.getElementById("groupe2").innerHTML = "";
+
+
+
+});
+
+myResetParticipants.addEventListener("click", (e)=> {
+    e.preventDefault();
+
+document.getElementById("monEquipe").innerHTML = "";
+});
