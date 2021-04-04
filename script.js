@@ -29,9 +29,7 @@ var teamGen = document.getElementById("teamGen");
 teamGen.addEventListener("click", (e)=> {
     e.preventDefault();
 
-    document.getElementById("allGroup").innerHTML = "";
-document.getElementById("groupe1").innerHTML = "";
-document.getElementById("groupe2").innerHTML = "";
+ 
 
 
 //duplication de mon tableaux
