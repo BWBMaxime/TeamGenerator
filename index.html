@@ -57,7 +57,7 @@
             <h3>Entre les noms de tes coéquipiers afin que je puisse élaborer vos groupes.</h3>
             <form action="">
                 <div class="form-outline ">
-                    <input type="text" id="entername" class="form-control text-center" accesskey="enter" keypress="javascript:this.value=''" value="Entrez les noms ici" />
+                    <input type="text" id="entername" class="form-control text-center" accesskey="enter"  value="" />
                     <label class="form-label" for="entername"></label>
                   </div>
                   
@@ -67,6 +67,7 @@
            
                     <!--Boutton pour générer les groupes-->
                     <input type="submit" value="TeamGen" id="teamGen" class="btn btn-primary btn-lg">
+                    <input type="button" value="Reset" id="myResetPage" class="btn btn-secondary btn-lg" onClick="history.go(0)">
                 </div>
             </form>
             <!--Table qui héberge les prénoms des gens qui formeront les groupes-->
@@ -80,7 +81,7 @@
                    
                      <!--Table qui héberge les prénoms des gens du groupe 1-->
                     <table class="table table-dark text-center col-md-12">
-                        <th>Groupe 1 : Lundi - Mercredi - Vendredi</th>
+                        <h3 class="groupTitleStyle">Groupe 1 : Lundi - Mercredi - Vendredi</h3>
                         <tr id="groupe1"></tr>
                     </table>
                 </div>
@@ -89,7 +90,7 @@
        
                     <!--Table qui héberge les prénoms des gens du groupe 2-->
                     <table class="table table-dark text-center col-md-12">
-                        <th>Groupe 2 : Mardi - Jeudi</th>
+                        <h3 class="groupTitleStyle">Groupe 2 : Mardi - Jeudi</h3>
                         <tr id="groupe2"></tr>
                     </table>
                  
